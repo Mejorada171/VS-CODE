@@ -57,12 +57,13 @@ nav {
     justify-content: space-around;
 }
 
-.book, .join { 
+.book, .join {
     background-color: #fafaff;
     text-decoration: none;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    font-size: 2em;
 }
 
 .rivers_card, .camping_card, .rapids_card {
@@ -219,7 +220,191 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+#square {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+}
 
+.background_image_1 {
+    margin-top: 1em;
+    display: grid;
+    grid-column: 4/8;
+    grid-row: 2/3;
+    width: 1250px;
+    height: 400px;
+    background-color: white;
+}
+
+#square_image {
+    margin-top: 2em;
+    margin-right: 3em;
+    display: grid;
+    grid-column: 7/8;
+    grid-row: 2/2;
+
+}
+
+#square_msg {
+    color: #481620;
+    position: absolute;
+    top: 10em;
+    left: 8em;
+}
+
+.background_image_2 {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block;
+    width: 16em;
+    height: 11em;
+    background-color: white;
+}
+
+.sentence {
+    font-family: "Bebas Neue";
+    font-size: 1.7em;
+    padding-top: 0em;
+}
+
+.rivers_canyons {
+    display: grid;
+    margin-top: -11em;
+    margin-left: 4em;
+}
+
+.idaho_img {
+    margin-left: -11%;
+    margin-top: 1%;
+}
+
+.utah_image {
+    margin-left: -22%;
+    margin-top: 1%;
+}
+.arizona_img {
+    margin-left: -31%;
+    margin-top: 1%;
+}
+
+#title_idaho {
+    font-family: "Bebas Neue";
+    font-size: 1.8em;
+    padding-top: .5em;
+    margin-left: -.1em;
+    margin-right: 1em;
+    color: black;
+}
+
+#title_utah {
+    font-family: "Bebas Neue";
+    font-size: 1.8em;
+    padding-top: .5em;
+    margin-left: -.1em;
+    margin-right: 2em;
+    color: black;
+}
+
+#title_arizona {
+    font-family: "Bebas Neue";
+    font-size: 1.8em;
+    padding-top: .5em;
+    margin-left: -1.5em;
+    margin-right: 1.5em;
+    color: black;
+}
+
+#text_idaho {
+    font-family: "Roboto";
+    font-size: .9em;
+    padding-left: .6em;
+    padding-right: 3em;
+}
+
+#text_utah {
+    font-family: "Roboto";
+    font-size: .9em;
+    padding-left: -1em;
+    padding-right: 4em;
+}
+
+#text_arizona {
+    padding-top: 2.6em;
+    font-family: "Roboto";
+    font-size: .9em;
+    padding-left: -.5em;
+    padding-right: 6em;
+}
+
+#background {
+    width: 30em;
+    height: 15em;
+    margin-left: -2em;
+}
+
+.intinerary_img {
+    padding-top: 2em;
+    width: 30em;
+    height: 20em;
+}
+
+#int {
+    font-family: "Bebas Neue";
+    font-size: 2em;
+    margin-top: -7.6em;
+    margin-left: -14em;
+    color: black;;
+}
+
+#day_1 {
+    font-family: "Roboto";
+    font-size: .9em;
+    margin-top: 1em;
+    margin-left: -31em;
+    color: #fafaff;
+}
+
+#day_2 {
+    font-family: "Roboto";
+    font-size: .9em;
+    margin-top: 1em;
+    margin-left: -31em;
+    color: #fafaff;
+}
+
+.review {
+    font-family: "Roboto";
+    font-size: .9em;
+    margin-left: 38em;
+    margin-right: 1em;
+    margin-top: -22em;
+}
+
+.one_years {
+    border: .5em solid #2a9d8f;
+    margin-top: 1em;
+}
+
+.two_years {
+    border: .5em solid #2a9d8f;
+    margin-top: 1em;
+}
+
+.three_years {
+    border: .5em solid #2a9d8f;
+    margin-top: 1em;
+}
+
+.title_review {
+    font-family: "Bebas Neue";
+    font-size: 2em;
+}
+
+.name {
+    font-family: "Roboto";
+    color: black;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -261,3 +446,4 @@ footer .social img {
         margin-top: 25px;
     }
 }
+
