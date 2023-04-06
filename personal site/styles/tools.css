@@ -10,7 +10,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -49,17 +49,19 @@ body {
 
 .bar {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 3fr, 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
   background-color: #89cff0;
   margin-top: 3em;
   margin-right: 2em;
   margin-left: 2em;
   color: black;
+  height: 20em;
 }
 
 .cat {
-  grid-column: 3/4;
+  grid-column: 3/3;
+  margin-right: .7em;
   text-align: center;
 }
 
@@ -77,14 +79,15 @@ body {
   grid-column: 1/2;
   grid-row: 3/4;
   text-align: center;
+  margin-top: -2.3em;
 }
+
 .img2 {
   width: 7em;
   height: 7em;
   grid-column: 2/3;
   grid-row: 2/3;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3.5em;
   border: .5em solid #023047;
 }
 
@@ -92,6 +95,8 @@ body {
   grid-column: 2/3;
   grid-row: 3/4;
   text-align: center;
+  margin-top: -2.3em;
+  margin-right: 1em;
 }
 
 .img3 {
@@ -99,17 +104,17 @@ body {
   height: 7em;
   grid-column: 3/4;
   grid-row: 2/3; 
-  margin-left: auto;
+  margin-left: 3.1em;
   margin-right: auto;
   border: .5em solid #023047;
 }
 
 .text3 {
   grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 2/3;
+  margin-top: 9em;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 1.5em;
 }
 
 .img4 {
@@ -117,15 +122,16 @@ body {
   height: 7em; 
   grid-row: 2/3;
   grid-column: 4/5;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3em;
   border: .5em solid #023047;
 }
 
 .text4 {
   grid-column: 4/5;
-  grid-row: 3/4;
+  grid-row: 2/3;
+  margin-top: 9em;
   text-align: center;
+  margin-right: 2em;
 }
 
 .img5 {
@@ -133,20 +139,22 @@ body {
   height: 7em; 
   grid-row: 2/3;
   grid-column: 5/6;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1em;
+  margin-right: 3em;
   border: .5em solid #023047;
 }
 
 .text5 {
   grid-column: 5/6;
-  grid-row: 3/4;
+  grid-row: 2/3;
+  margin-top: 9em;
   text-align: center;
+  margin-right: 2em;
 }
 
 .blocks {
   display: grid;
-  grid-template-rows: 16.66%, 16.66%, 16.66%, 16.66%, 16.66%, 16.66%;
+  grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
 }
 
 .tool_title {
@@ -177,7 +185,16 @@ body {
 .blockEach img:nth-of-type(1) {
   width: 70%;
   margin: auto;
+}
 
+.tool_img4{
+  width: 70%;
+  height: 50%; 
+}
+
+.tool_img6{
+  width: 70%;
+  height: 70%; 
 }
 
 .blockEach button {
@@ -191,11 +208,14 @@ body {
 
 .blockEach button img:nth-of-type(1){
   width: 4em;
+  grid-column: 3/4;
+  margin-right: 2em;
+
 }
 
 .blockEach button img:nth-of-type(2){
   width: 4em;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .blockEach button p:nth-of-type(1){
@@ -214,6 +234,10 @@ body {
   font-size: 1.5em;
 }
 
+.price1{
+  font-size: 2em;
+}
+
 .footer {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -228,6 +252,7 @@ body {
   border-radius: 4em;
   width: 8em;
   height: 6em;
+  margin-top: 10em;
 }
 
 .icon_ss {
@@ -318,6 +343,8 @@ header {
     background-color: #89cff0;
     color: #fafaff;
     height: 7em;
+    grid-column: 1/5;
+
 }
 
 header {
